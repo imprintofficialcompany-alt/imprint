@@ -19,8 +19,8 @@ app.markdown(
 
 # DESIGN
 
-app.header("imprint")
-app.subheader("*oficial*")
+app.title("imprint oficial")
+
 
 app.divider()
 

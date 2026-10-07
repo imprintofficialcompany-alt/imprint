@@ -20,8 +20,14 @@ app.markdown(
 # DESIGN
 
 app.title("imprint oficial")
-app.badge(icon="⏱", label="ᴀᴘʟɪᴄᴀᴄɪóɴ 24/7", color="green")
 
-app.divider()
+
+col1, col2, col3, col4 = app.columns([1, 1, 1, 5])
+with col1:
+  app.badge(icon="⏱", label="ᴀᴘʟɪᴄᴀᴄɪóɴ 24/7", color="green")
+with col2:
+  app.badge(icon="🥾", label="ᴇɴᴛʀᴇɢᴀꜱ ʀáᴘɪᴅᴀꜱ")
+with col3:
+  app.badge(icon="🛡", label="ᴘʀɪᴠᴀᴄɪᴅᴀᴅ ᴍáxɪᴍᴀ")
 
 app.write("Bienvenido a la **página web oficial de Imprint**. Desde aquí, puedes hacer pedidos,\nver nuestro catálogo de productos y ordenar **impresiones 3D personalizadas mediante un archivo específico .STL o .OBJ.**\nAdicionalmente, si no te interesa nuestro catálogo, **puedes buscar más modelos en makerworld.com** con una variedad más amplia de modelos 3D.")

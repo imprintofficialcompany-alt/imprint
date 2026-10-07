@@ -22,7 +22,7 @@ app.markdown(
 app.title("imprint oficial")
 
 
-col1, col2, col3, col4 = app.columns([3, 3, 3], gap="small")
+col1, col2, col3 = app.columns([3, 3, 3], gap="small")
 with col1:
   app.badge(icon="⏱", label="ᴀᴘʟɪᴄᴀᴄɪóɴ 24/7", color="green")
 with col2:

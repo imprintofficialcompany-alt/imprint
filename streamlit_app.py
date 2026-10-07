@@ -1,6 +1,6 @@
-import streamlit as st
+import streamlit as app
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+# DESIGN
+
+app.title("imprint oficial")
+app.divider()

@@ -20,7 +20,7 @@ app.markdown(
 # DESIGN
 
 app.title("imprint oficial")
-app.badge(icon="↺", label="ᴀᴘʟɪᴄᴀᴄɪóɴ ₂₄-₇")
+app.badge(icon="⏱", label="ᴀᴘʟɪᴄᴀᴄɪóɴ ₂₄-₇")
 
 app.divider()
 

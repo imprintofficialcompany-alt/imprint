@@ -48,24 +48,24 @@ with col1:
         
         app.link_button("Ir a Makerworld", "https://makerworld.com")
 
-with col3:
+with col2:
     with app.container(border=True):
         
         app.image("images/banner_catálogo_mensual.png", use_container_width=True)
         
-        app.subheader("Busca en Makerworld")
+        app.subheader("Observa nuestro Catálogo Mensual")
         app.badge(label="ACTIVO", icon="🟢", color="green")
-        app.write("Busca en Makerworld para encontrar más modelos para imprimir")
+        app.write("Mira nuestro catálogo con artilugios y objetos útiles para facilitar tareas")
         
-        app.link_button("Ir a Makerworld", "https://makerworld.com")
+        app.link_button("Descubrir", "https://makerworld.com")
 
 with col3:
     with app.container(border=True):
         
         app.image("images/banner_correo.png", use_container_width=True)
         
-        app.subheader("Busca en Makerworld")
+        app.subheader("Pedidos Online (RESERVA)")
         app.badge(label="ACTIVO", icon="🟢", color="green")
-        app.write("Busca en Makerworld para encontrar más modelos para imprimir")
+        app.write("Reserva una impresión 3D directamente desde tu sofá, sin hacer nada. \nSolo proporciona tu correo y nombre, también, el link de la impresión")
         
-        app.link_button("Ir a Makerworld", "https://makerworld.com")
+        app.link_button("Contactar", "https://makerworld.com")

@@ -48,25 +48,24 @@ with col1:
         
         app.link_button("Ir a Makerworld", "https://makerworld.com")
 
-
-with col2:
+with col3:
     with app.container(border=True):
-        app.image("https://placehold.co", use_container_width=True)
         
-        app.subheader("Producte B")
-        app.write("**Preu:** 29,99 €")
-        app.write("Aquesta és una descripció breu i atractiva del Producte B.")
+        app.image("images/banner_catálogo_mensual.png", use_container_width=True)
         
-        if app.button("Ir", key="btn_b"):
-            app.success("S'ha afegit el Producte B al carret!")
+        app.subheader("Busca en Makerworld")
+        app.badge(label="ACTIVO", icon="🟢", color="green")
+        app.write("Busca en Makerworld para encontrar más modelos para imprimir")
+        
+        app.link_button("Ir a Makerworld", "https://makerworld.com")
 
 with col3:
     with app.container(border=True):
-        app.image("https://placehold.co", use_container_width=True)
         
-        app.subheader("Producte B")
-        app.write("**Preu:** 29,99 €")
-        app.write("Aquesta és una descripció breu i atractiva del Producte B.")
+        app.image("images/banner_correo.png", use_container_width=True)
         
-        if app.button("Ir", key="btn_b"):
-            app.success("S'ha afegit el Producte B al carret!")
+        app.subheader("Busca en Makerworld")
+        app.badge(label="ACTIVO", icon="🟢", color="green")
+        app.write("Busca en Makerworld para encontrar más modelos para imprimir")
+        
+        app.link_button("Ir a Makerworld", "https://makerworld.com")

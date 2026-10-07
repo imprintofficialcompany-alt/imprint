@@ -43,11 +43,10 @@ with col1:
         app.image("images/banner_makerworld.png", use_container_width=True)
         
         app.subheader("Busca en Makerworld")
-        app.badge(label="ACTIVO", icon="🟢")
+        app.badge(label="ACTIVO", icon="🟢", color="green")
         app.write("Busca en Makerworld para encontrar más modelos para imprimir")
         
-        if app.button("Ir", key="btn_a"):
-            app.link_button("Ir a Makerworld", "https://makerworld.com")
+        app.link_button("Ir a Makerworld", "https://makerworld.com")
 
 
 with col2:

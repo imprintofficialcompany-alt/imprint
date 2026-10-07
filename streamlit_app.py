@@ -34,40 +34,31 @@ app.write("Bienvenido a la **página web oficial de Imprint**. Desde aquí, pued
 
 app.divider()
 
+col1, col2, col3 = app.columns(3)
+
+# --- PRODUCTE 1 ---
 with col1:
-    with st.container(border=True):
-        # Imatge del producte (pots fer servir un enllaç d'Internet o una ruta local)
-        st.image("https://placehold.co", use_container_width=True)
+    with app.container(border=True):
+        # Imatge adaptada a la columna
+        app.image("https://placehold.co", use_container_width=True)
         
-        # Text del producte
-        st.subheader("Producte A")
-        st.write("**Preu:** 19,99 €")
-        st.write("Aquesta és una descripció breu i atractiva del Producte A.")
+        # Text i descripció
+        app.subheader("Producte A")
+        app.write("**Preu:** 19,99 €")
+        app.write("Aquesta és una descripció breu i atractiva del Producte A.")
         
-        # Botó d'acció
-        if st.button("Comprar A", key="btn_a"):
-            st.success("S'ha afegit el Producte A al carret!")
+        # Botó d'acció amb clau única
+        if app.button("Comprar A", key="btn_a"):
+            app.success("S'ha afegit el Producte A al carret!")
 
 # --- PRODUCTE 2 ---
 with col2:
-    with st.container(border=True):
-        st.image("https://placehold.co", use_container_width=True)
+    with app.container(border=True):
+        app.image("https://placehold.co", use_container_width=True)
         
-        st.subheader("Producte B")
-        st.write("**Preu:** 29,99 €")
-        st.write("Aquesta és una descripció breu i atractiva del Producte B.")
+        app.subheader("Producte B")
+        app.write("**Preu:** 29,99 €")
+        app.write("Aquesta és una descripció breu i atractiva del Producte B.")
         
-        if st.button("Comprar B", key="btn_b"):
-            st.success("S'ha afegit el Producte B al carret!")
-
-# --- PRODUCTE 3 ---
-with col3:
-    with st.container(border=True):
-        st.image("https://placehold.co", use_container_width=True)
-        
-        st.subheader("Producte C")
-        st.write("**Preu:** 39,99 €")
-        st.write("Aquesta és una descripció breu i atractiva del Producte C.")
-        
-        if st.button("Comprar C", key="btn_c"):
-            st.success("S'ha afegit el Producte C al carret!")
+        if app.button("Comprar B", key="btn_b"):
+            app.success("S'ha afegit el Producte B al carret!")

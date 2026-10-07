@@ -1,6 +1,6 @@
 import streamlit as app
 
-st.markdown(
+app.markdown(
     """
     <style>
     /* Target the base document layout, text fields, and markdown tags */

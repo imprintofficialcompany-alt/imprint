@@ -36,22 +36,20 @@ app.divider()
 
 col1, col2, col3 = app.columns(3)
 
-# --- PRODUCTE 1 ---
+
 with col1:
     with app.container(border=True):
-        # Imatge adaptada a la columna
-        app.image("https://placehold.co", use_container_width=True)
         
-        # Text i descripció
-        app.subheader("Producte A")
-        app.write("**Preu:** 19,99 €")
-        app.write("Aquesta és una descripció breu i atractiva del Producte A.")
+        app.image("imatges/banner_makerworld.png", use_container_width=True)
         
-        # Botó d'acció amb clau única
-        if app.button("Comprar A", key="btn_a"):
-            app.success("S'ha afegit el Producte A al carret!")
+        app.subheader("Busca en Makerworld")
+        app.badge(label="ACTIVO", icon="🟢")
+        app.write("Busca en Makerworld para encontrar más modelos para imprimir")
+        
+        if app.button("Ir", key="btn_a"):
+            app.link_button("Ir a Makerworld", "https://makerworld.com")
 
-# --- PRODUCTE 2 ---
+
 with col2:
     with app.container(border=True):
         app.image("https://placehold.co", use_container_width=True)
@@ -60,5 +58,16 @@ with col2:
         app.write("**Preu:** 29,99 €")
         app.write("Aquesta és una descripció breu i atractiva del Producte B.")
         
-        if app.button("Comprar B", key="btn_b"):
+        if app.button("Ir", key="btn_b"):
+            app.success("S'ha afegit el Producte B al carret!")
+
+with col3:
+    with app.container(border=True):
+        app.image("https://placehold.co", use_container_width=True)
+        
+        app.subheader("Producte B")
+        app.write("**Preu:** 29,99 €")
+        app.write("Aquesta és una descripció breu i atractiva del Producte B.")
+        
+        if app.button("Ir", key="btn_b"):
             app.success("S'ha afegit el Producte B al carret!")

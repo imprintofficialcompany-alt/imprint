@@ -40,7 +40,7 @@ col1, col2, col3 = app.columns(3)
 with col1:
     with app.container(border=True):
         
-        app.image("imatges/banner_makerworld.png", use_container_width=True)
+        app.image("images/banner_makerworld.png", use_container_width=True)
         
         app.subheader("Busca en Makerworld")
         app.badge(label="ACTIVO", icon="🟢")
